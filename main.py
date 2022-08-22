@@ -27,12 +27,14 @@ def get_weather():
 def get_random_color():
   return "#%06x" % random.randint(0, 0xFFFFFF)
 
+
 def get_count():
   delta = today - datetime.strptime(start_date, "%Y-%m-%d")
   return delta.days
 
 def get_random_color():
   return "#%06x" % random.randint(0, 0xFFFFFF)
+
 
 def get_birthday():
   next = datetime.strptime(str(date.today().year) + "-" + birthday, "%Y-%m-%d")
@@ -42,6 +44,7 @@ def get_birthday():
 
 def get_random_color():
   return "#%06x" % random.randint(0, 0xFFFFFF)
+
 
 def get_words():
   words = requests.get("https://api.shadiao.pro/chp")
